@@ -7,7 +7,7 @@
 <a href="#"><img src="https://img.shields.io/github/forks/naufalardhani/domhttpx?label=Fork"></a>
 <a href="3"><img src="https://img.shields.io/github/forks/naufalardhani/domhttpx?label=Watch"></a>
 </p>
-domHttpx is a google searcher and HTTP toolkit
+domhttpx is a google search engine dorker with HTTP toolkit built with python, can make it easier for you to find many URLs/IPs at once with fast time.
 
 # Default Usage
 
