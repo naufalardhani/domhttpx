@@ -14,7 +14,7 @@ def parse_argument():
     
     # Optional Options
     parser.add_argument('-v','--version', action='store_true', dest='version', help="Show version of domHttpx")
-    parser.add_argument('-silent', action='store_true', dest='silent', help='Silent mode (without banner and info)')
+    parser.add_argument('-s','--silent', action='store_true', dest='silent', help='Silent mode (without banner and info)')
     parser.add_argument('-o', '--output', action='store', dest='output', help='File path to write output')
     parser.add_argument('-cr', '--check-result', action='store_true', dest='check_result', help='Check the result')
     parser.add_argument('-sr', '--show-result', action='store', dest='show_result', help='Show the result')

@@ -1,6 +1,8 @@
 import glob
 import os
 
+from domHttpx import write
+
 def check_result():
     result_name = glob.glob('./result/*')
     counter = 0
@@ -17,7 +19,7 @@ def remove_result(filename):
     counter = 0
     for i in file:
         counter += 1
-    tab()
+    write.tab()
     # info('Total %i line' % counter)
     confirm = input('Are you sure to remove %s which has %i results? (y/n) ' % (filename, counter))
     if confirm == "y":
