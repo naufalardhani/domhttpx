@@ -28,19 +28,19 @@ This will display help for the tool. Here are all the switches it supports.
 
 | Flag                | Description                                                | Example                                                 |
 | ------------------- | ---------------------------------------------------------- | ------------------------------------------------------- |
-| -ip / --only-ip     | Show output as IP only                                     | domhttpx --only-ip                                      |
-| -od / --only-domain | Show output as domain only                                 | domhttpx --only-domain                                  |
-| -rp / --real-path   | Extract real path                                          | domhttpx -k [keyword] -a [amount] --real-path           |
-| -p / --path         | Custom path url                                            | domhttpx -k [keyword] -a [amount]  --path [custom_path] |
-| -sc / --status-code | Extract status code                                        | domhttpx -k [keyword] -a [amount]  --status-code        |
-| -t / --title        | Extract title page                                         | domhttpx -k [keyword] -a [amount]  --title              |
-| -ws / --web-server  | Extract web server                                         | domhttpx -k [keyword] -a [amount]  --server             |
-| -cr / --check-result| Check list result                                          | domhttpx --check-result                                 |
-| -sr / --show-result | Show result content                                        | domhttpx --show-result result.txt                       |
-| -rr / --remove-result| Remove result file                                        | domhttpx --remove-result result.txt                     |
-| -o / --output       | File to write output                                       | domhttpx -k [keyword] -a [amount]  -o output.txt        |
-| --silent            | Show only subdomains in output                             | domhttpx -k [keyword] -a [amount]  --silent             |
-| -v / --version      | Show current program version                               | domhttpx --version                                      |
+| -ip, --only-ip     | Show output as IP only                                     | domhttpx --only-ip                                      |
+| -od, --only-domain | Show output as domain only                                 | domhttpx --only-domain                                  |
+| -rp, --real-path   | Extract real path                                          | domhttpx -k [keyword] -a [amount] --real-path           |
+| -p, --path         | Custom path url                                            | domhttpx -k [keyword] -a [amount]  --path [custom_path] |
+| -sc, --status-code | Extract status code                                        | domhttpx -k [keyword] -a [amount]  --status-code        |
+| -t, --title        | Extract title page                                         | domhttpx -k [keyword] -a [amount]  --title              |
+| -ws, --web-server  | Extract web server                                         | domhttpx -k [keyword] -a [amount]  --server             |
+| -cr, --check-result| Check list result                                          | domhttpx --check-result                                 |
+| -sr, --show-result | Show result content                                        | domhttpx --show-result result.txt                       |
+| -rr, --remove-result| Remove result file                                        | domhttpx --remove-result result.txt                     |
+| -o, --output       | File to write output                                       | domhttpx -k [keyword] -a [amount]  -o output.txt        |
+| -s, --silent            | Show only subdomains in output                             | domhttpx -k [keyword] -a [amount]  --silent             |
+| -v, --version      | Show current program version                               | domhttpx --version                                      |
 
 
 # Running domHttpx
