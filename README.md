@@ -16,10 +16,10 @@ $ python3 domhttpx.py --keyword [keyword] --amount [amount]
 ```
 
 ### One keyword
-<p align="center"><img src="static/one-keyword.png"></p>
+<p><img src="static/one-keyword.png"></p>
 
 ### Multiple keyword
-<p align="center"><img src="static/multiple-keyword.png"></p>
+<p><img src="static/multiple-keyword.png"></p>
 
 This will display help for the tool. Here are all the switches it supports.
 
