@@ -216,6 +216,6 @@ https://www.mainbasket.com/r/6522/muhamad-hafizh-gua-ingin-jadi-pemain-indonesia
 ```
 
 # Thanks
-- [@projectdiscovery](https://github.com/projectdiscovery) - because I was inspired by their project, namely `httpx`
+- [@projectdiscovery](https://github.com/projectdiscovery) - because I was inspired by their project, namely ``httpx``
 - [@p4kl0nc4t](https://github.com/p4kl0nc4t) - who has given many solutions in making domHttpx
 
