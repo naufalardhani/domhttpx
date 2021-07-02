@@ -1,5 +1,5 @@
-<p align="center"><b> domhttpx </b></p>
-
+<p align="center">
+     <img src="static/domHttpx.png" height="60">
 <p align="center">
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-_red.svg"></a>
 <a href="https://github.com/projectdiscovery/httpx/issues"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat"></a>
@@ -14,6 +14,8 @@ domhttpx is a google search engine dorker with HTTP toolkit built with python, c
 ```sh
 $ python3 domhttpx.py --keyword [keyword] --amount [amount]
 ```
+<p align="center"><img src="static/default-usage.png" height="700"></p>
+
 This will display help for the tool. Here are all the switches it supports.
 
 | Flag                | Description                                                | Example                                                 |
