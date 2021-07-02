@@ -15,10 +15,10 @@ domhttpx is a google search engine dorker with HTTP toolkit built with python, c
 $ python3 domhttpx.py --keyword [keyword] --amount [amount]
 ```
 
-### One keyword
+### - One keyword
 <p><img src="static/one-keyword.png"></p>
 
-### Multiple keyword
+### - Multiple keyword
 <p><img src="static/multiple-keyword.png"></p>
 
 This will display help for the tool. Here are all the switches it supports.
