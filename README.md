@@ -9,10 +9,13 @@
 </p>
 domhttpx is a google search engine dorker with HTTP toolkit built with python, can make it easier for you to find many URLs/IPs at once with fast time.
 
-# Default Usage
+# How to Install
+
+
+## Default Usage
 
 ```sh
-$ python3 domhttpx.py --keyword [keyword] --amount [amount]
+$ domhttpx.py --keyword [keyword] --amount [amount]
 ```
 
 ### - One keyword
@@ -25,26 +28,26 @@ This will display help for the tool. Here are all the switches it supports.
 
 | Flag                | Description                                                | Example                                                 |
 | ------------------- | ---------------------------------------------------------- | ------------------------------------------------------- |
-| -ip / --only-ip     | Show output as IP only                                     | domhttpx --only-ip                                      |
-| -od / --only-domain | Show output as domain only                                 | domhttpx --only-domain                                  |
-| -rp / --real-path   | Extract real path                                          | domhttpx -k [keyword] -a [amount] --real-path           |
-| -p / --path         | Custom path url                                            | domhttpx -k [keyword] -a [amount]  --path [custom_path] |
-| -sc / --status-code | Extract status code                                        | domhttpx -k [keyword] -a [amount]  --status-code        |
-| -t / --title        | Extract title page                                         | domhttpx -k [keyword] -a [amount]  --title              |
-| -ws / --web-server  | Extract web server                                         | domhttpx -k [keyword] -a [amount]  --server             |
-| -cr / --check-result| Check list result                                          | domhttpx --check-result                                 |
-| -sr / --show-result | Show result content                                        | domhttpx --show-result result.txt                       |
-| -rr / --remove-result| Remove result file                                        | domhttpx --remove-result result.txt                     |
-| -o / --output       | File to write output                                       | domhttpx -k [keyword] -a [amount]  -o output.txt        |
-| --silent            | Show only subdomains in output                             | domhttpx -k [keyword] -a [amount]  --silent             |
-| -v / --version      | Show current program version                               | domhttpx --version                                      |
+| -ip, --only-ip     | Show output as IP only                                     | domhttpx --only-ip                                      |
+| -od, --only-domain | Show output as domain only                                 | domhttpx --only-domain                                  |
+| -rp, --real-path   | Extract real path                                          | domhttpx -k [keyword] -a [amount] --real-path           |
+| -p, --path         | Custom path url                                            | domhttpx -k [keyword] -a [amount]  --path [custom_path] |
+| -sc, --status-code | Extract status code                                        | domhttpx -k [keyword] -a [amount]  --status-code        |
+| -t, --title        | Extract title page                                         | domhttpx -k [keyword] -a [amount]  --title              |
+| -ws, --web-server  | Extract web server                                         | domhttpx -k [keyword] -a [amount]  --server             |
+| -cr, --check-result| Check list result                                          | domhttpx --check-result                                 |
+| -sr, --show-result | Show result content                                        | domhttpx --show-result result.txt                       |
+| -rr, --remove-result| Remove result file                                        | domhttpx --remove-result result.txt                     |
+| -o, --output       | File to write output                                       | domhttpx -k [keyword] -a [amount]  -o output.txt        |
+| -s, --silent            | Show only subdomains in output                             | domhttpx -k [keyword] -a [amount]  --silent             |
+| -v, --version      | Show current program version                               | domhttpx --version                                      |
 
 
 # Running domHttpx
 ### Running domHttpx with default command
 This will run an automatic search tool with the specified keyword and number
 ```
-➤ python3 domhttpx.py --keyword indonesia --amount 20     
+➤ domhttpx.py --keyword indonesia --amount 20     
 
      _           _  _ _   _
   __| |___ _ __ | || | |_| |_ _ ____ __
@@ -82,7 +85,7 @@ https://www.worldbank.org
 
 ### Show output as IP
 ```
-➤ python3 domhttpx.py --keyword indonesia --amount 20 --only-ip
+➤ domhttpx.py --keyword indonesia --amount 20 --only-ip
 
      _           _  _ _   _
   __| |___ _ __ | || | |_| |_ _ ____ __
@@ -120,7 +123,7 @@ https://www.worldbank.org
 
 ### Extracts the real path 
 ```
-➤ python3 domhttpx.py --keyword indonesia --amount 20 --real-path
+➤ domhttpx.py --keyword indonesia --amount 20 --real-path
 
      _           _  _ _   _
   __| |___ _ __ | || | |_| |_ _ ____ __
@@ -158,7 +161,7 @@ https://www.lonelyplanet.com/indonesia
 
 ### Extracts status code
 ```
-➤ python3 domhttpx.py --keyword "Indonesia Basketball League" --amount 10 --status-code 
+➤ domhttpx.py --keyword "Indonesia Basketball League" --amount 10 --status-code 
 
      _           _  _ _   _
   __| |___ _ __ | || | |_| |_ _ ____ __
@@ -186,7 +189,7 @@ https://en.wikipedia.org [200]
 
 ### Extracts title page
 ```
-➤ python3 domhttpx.py --keyword "Ananta Dandy" --amount 10 --real-path --title              
+➤ domhttpx.py --keyword "Ananta Dandy" --amount 10 --real-path --title              
 
      _           _  _ _   _
   __| |___ _ __ | || | |_| |_ _ ____ __
@@ -213,5 +216,6 @@ https://www.mainbasket.com/r/6522/muhamad-hafizh-gua-ingin-jadi-pemain-indonesia
 ```
 
 # Thanks
+- [@projectdiscovery](https://github.com/projectdiscovery) - because I was inspired by their project, namely ``httpx``
 - [@p4kl0nc4t](https://github.com/p4kl0nc4t) - who has given many solutions in making domHttpx
 
