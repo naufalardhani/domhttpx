@@ -15,7 +15,7 @@ domhttpx is a google search engine dorker with HTTP toolkit built with python, c
 ## Default Usage
 
 ```sh
-$ python3 domhttpx.py --keyword [keyword] --amount [amount]
+$ domhttpx.py --keyword [keyword] --amount [amount]
 ```
 
 ### - One keyword
@@ -47,7 +47,7 @@ This will display help for the tool. Here are all the switches it supports.
 ### Running domHttpx with default command
 This will run an automatic search tool with the specified keyword and number
 ```
-➤ python3 domhttpx.py --keyword indonesia --amount 20     
+➤ domhttpx.py --keyword indonesia --amount 20     
 
      _           _  _ _   _
   __| |___ _ __ | || | |_| |_ _ ____ __
@@ -85,7 +85,7 @@ https://www.worldbank.org
 
 ### Show output as IP
 ```
-➤ python3 domhttpx.py --keyword indonesia --amount 20 --only-ip
+➤ domhttpx.py --keyword indonesia --amount 20 --only-ip
 
      _           _  _ _   _
   __| |___ _ __ | || | |_| |_ _ ____ __
@@ -123,7 +123,7 @@ https://www.worldbank.org
 
 ### Extracts the real path 
 ```
-➤ python3 domhttpx.py --keyword indonesia --amount 20 --real-path
+➤ domhttpx.py --keyword indonesia --amount 20 --real-path
 
      _           _  _ _   _
   __| |___ _ __ | || | |_| |_ _ ____ __
@@ -161,7 +161,7 @@ https://www.lonelyplanet.com/indonesia
 
 ### Extracts status code
 ```
-➤ python3 domhttpx.py --keyword "Indonesia Basketball League" --amount 10 --status-code 
+➤ domhttpx.py --keyword "Indonesia Basketball League" --amount 10 --status-code 
 
      _           _  _ _   _
   __| |___ _ __ | || | |_| |_ _ ____ __
@@ -189,7 +189,7 @@ https://en.wikipedia.org [200]
 
 ### Extracts title page
 ```
-➤ python3 domhttpx.py --keyword "Ananta Dandy" --amount 10 --real-path --title              
+➤ domhttpx.py --keyword "Ananta Dandy" --amount 10 --real-path --title              
 
      _           _  _ _   _
   __| |___ _ __ | || | |_| |_ _ ____ __
