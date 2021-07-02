@@ -13,9 +13,8 @@ domhttpx is a google search engine dorker with HTTP toolkit built with python, c
 # Insallation
 ```
 $ git clone https://github.com/naufalardhani/domhttpx.git
-$ cd domhttpx && chmod +x domhttpx.py
-$ pip3 install -r requirements.txt
-$ ./domhttpx.py
+$ cd domhttpx && pip3 install -r requirements.txt
+$ python3 domhttpx.py --help
 ```
 
 # Default Usage
