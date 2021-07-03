@@ -1,9 +1,9 @@
-import requests
 import socket
 import os
+import requests
+import re
 from googlesearch import search
 from urllib.parse import urlparse
-from bs4 import BeautifulSoup
 
 from domHttpx import cli
 from domHttpx.colors import Color
@@ -24,6 +24,7 @@ class Domain:
         self.output_status_code = []
         self.output_title = []
         self.output_server = []
+        self.duplicate_list = ""
 
     def dork(self):
         results = search(self.keyword, num=int(self.amount), start=0, stop=None, pause=0)
@@ -87,9 +88,11 @@ class Domain:
     def get_title(self, url):
         for domain in url:
             r = requests.get(domain)
-            soup = BeautifulSoup(r.text, 'html.parser')
-            title = f"[{Color.CCYAN2}{soup.title.string}{Color.ENDC}]"
-            url = domain + ' ' + title
+            try:
+                title = re.findall('<title>(.*?)</title>', r.text)[0]
+            except Exception:
+                title = "Title not found"
+            url = "%s [%s%s%s]" % (domain, Color.CCYAN2, title, Color.ENDC)
             self.output_title.append(url)
         
         return self.output_title
@@ -109,17 +112,8 @@ class Domain:
         self.output.write('\n'.join(output))
         self.output.close()
 
-    # def check_result(self):
-    #     x = glob.glob('./result/*')
-    #     for tes in x:
-    #         print(tes)
-
     def show(self):
         args = cli.parse_argument()
-
-        # if args.check_result == True:
-        #     self.check_result()
-        #     exit()
 
         if args.domain == True:
             dom_result = self.get_domain_only()

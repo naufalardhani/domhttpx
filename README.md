@@ -7,7 +7,8 @@
 <a href="#"><img src="https://img.shields.io/github/forks/naufalardhani/domhttpx?label=Fork"></a>
 <a href="3"><img src="https://img.shields.io/github/forks/naufalardhani/domhttpx?label=Watch"></a>
 </p>
-domhttpx is a google search engine dorker with HTTP toolkit built with python, can make it easier for you to find many URLs/IPs at once with fast time.
+
+domhttpx is a [google search engine dorker](https://github.com/MarioVilas/googlesearch) with HTTP toolkit built with python, can make it easier for you to find many URLs/IPs at once with fast time.
 
 # How to Install
 ```
@@ -17,17 +18,22 @@ $ pip3 install -r requirement.txt
 $ python3 domhttpx.py --help
 ```
 
-## Default Usage
+# Usage
 
+### Default Usage
 ```sh
 $ domhttpx.py --keyword [keyword] --amount [amount]
 ```
 
-### - One keyword
-<p><img src="static/one-keyword.png"></p>
+### One keyword
+```
+$ domhttpx.py --keyword pentesting --amount 5
+```
 
-### - Multiple keyword
-<p><img src="static/multiple-keyword.png"></p>
+### Multiple keyword
+```
+$ domhttpx.py --keyword "pentesting basic" --amount 5
+```
 
 This will display help for the tool. Here are all the switches it supports.
 
@@ -221,6 +227,7 @@ https://www.mainbasket.com/r/6522/muhamad-hafizh-gua-ingin-jadi-pemain-indonesia
 ```
 
 # Thanks
-- [@projectdiscovery](https://github.com/projectdiscovery) - because I was inspired by their project, namely ``httpx``
+- [@MarioVilas](https://github.com/MarioVilas/) - domhttpx uses dorker from the [googlesearch](https://github.com/MarioVilas/googlesearch) package made by him 
+- [@projectdiscovery](https://github.com/projectdiscovery) - because I was inspired by their project which is [httpx](https://github.com/projectdiscovery/httpx/), that's why I made domhttpx
 - [@p4kl0nc4t](https://github.com/p4kl0nc4t) - who has given many solutions in making domHttpx
 
