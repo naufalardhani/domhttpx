@@ -19,12 +19,13 @@ def parse_argument():
     parser.add_argument('-cr', '--check-result', action='store_true', dest='check_result', help='Check the result')
     parser.add_argument('-sr', '--show-result', action='store', dest='show_result', help='Show the result')
     parser.add_argument('-rr', '--remove-result', action='store', dest='remove_result', help='Remove result')
+    # parser.add_argument('-cu', '--check-update', action='store_true', dest='check_update', help='Check domhttpx update')
     
 
     # Dorking Options
-    dorking = parser.add_argument_group('Dorking')
-    dorking.add_argument('-k','--keyword', action='store', dest='keyword')
-    dorking.add_argument('-a','--amount', action='store', dest='amount', type=int)
+    dorking = parser.add_argument_group('DORKING')
+    dorking.add_argument('-k','--keyword', action='store', dest='keyword', help="Search keyword/query")
+    dorking.add_argument('-a','--amount', action='store', dest='amount', type=int, help="Specify result amount")
     
     # HTTX Options
     httpx = parser.add_argument_group('HTTPX')
@@ -33,18 +34,13 @@ def parse_argument():
     httpx.add_argument('-sc','--status-code', action='store_true', dest='status_code', help='Extracts status code')
     httpx.add_argument('-ws','--web-server', action='store_true', dest='server', help='Extracts server')
     httpx.add_argument('-t','--title', action='store_true', dest='title', help='Extracts title')
-    httpx.add_argument('-p','--path', action='store', dest='path', help='Custom path (ex: /api)')
+    httpx.add_argument('-p','--path', action='store', dest='path', help='Custom path')
     httpx.add_argument('-rp','--real-path', action='store_true', dest='real_path', help='Extracts path')
     httpx.add_argument('-od','--only-domain', action='store_true', dest='domain', help='Shows domain only')
     args = parser.parse_args()
     return args
 
-def main():
-    args = parse_argument()
-    init = Domain(args.keyword, args.amount)
-
-    os.system('clear')
-
+def validation(args):
     if args.silent != True:
         domhttpx_header()
 
@@ -71,5 +67,14 @@ def main():
     if args.amount == None:
         error('No input amount detected')
         sys.exit()
+
+
+def main():
+    args = parse_argument()
+    init = Domain(args.keyword, args.amount)
+
+    os.system('clear')
+    
+    validation(args)
 
     init.show()
