@@ -10,7 +10,21 @@
 
 domhttpx is a [google search engine dorker](https://github.com/MarioVilas/googlesearch) with HTTP toolkit built with python, can make it easier for you to find many URLs/IPs at once with fast time.
 
-# How to Install
+- [Install](#install)
+- [Usage](#usage)
+  - [Flags](#flags)
+  - [Basic Usage](#basic-usage)
+  - [One Keyword](#one-keyword)
+  - [Multiple Keyword](#multiple-keyword)
+  - [Extract Title Page](#extract-title-page)
+  - [Extract Title Page from Real Path](#extract-title-page-from-real-path)
+  - [Extract Status Code](#extract-status-code)
+  - [Extract Status Code from Real Path](#extract-status-code-from-real-path)
+- [Running Example](#running-example)
+- [Help & Bugs](#help--bugs)
+- [Thanks](#thanks)
+
+# Install
 ```
 $ git clone https://github.com/naufalardhani/domhttpx.git
 $ cd domhttpx 
@@ -20,21 +34,7 @@ $ python3 domhttpx.py --help
 
 # Usage
 
-### Default Usage
-```sh
-$ domhttpx.py --keyword [keyword] --amount [amount]
-```
-
-### One keyword
-```
-$ domhttpx.py --keyword pentesting --amount 5
-```
-
-### Multiple keyword
-```
-$ domhttpx.py --keyword "pentesting basic" --amount 5
-```
-
+### Flags
 This will display help for the tool. Here are all the switches it supports.
 
 | Flag                | Description                                                | Example                                                 |
@@ -54,7 +54,32 @@ This will display help for the tool. Here are all the switches it supports.
 | -v, --version      | Show current program version                               | domhttpx --version                                      |
 
 
-# Running domHttpx
+### Basic Usage
+```sh
+> domhttpx.py --keyword [keyword] --amount [amount]
+```
+
+### One keyword
+```sh
+> domhttpx.py --keyword pentesting --amount 5
+```
+
+### Multiple keyword
+```sh
+> domhttpx.py --keyword "pentesting basic" --amount 5
+```
+
+### Extract Title Page
+```sh
+> domhttpx.py --keyword "pentesting basic" --amount 5 --title
+```
+
+### Extract Title Page from Real Path
+```sh
+> domhttpx.py --keyword "pentesting basic" --amount 5 --title --real-path
+```
+
+# Running Example
 ### Running domHttpx with default command
 This will run an automatic search tool with the specified keyword and number
 ```
@@ -96,7 +121,7 @@ https://www.worldbank.org
 
 ### Show output as IP
 ```
-➤ domhttpx.py --keyword indonesia --amount 20 --only-ip
+➤ domhttpx.py --keyword indonesia --amount 9 --only-ip
 
      _           _  _ _   _
   __| |___ _ __ | || | |_| |_ _ ____ __
@@ -107,17 +132,6 @@ https://www.worldbank.org
             naufalardhani.com
 
 54.192.146.34
-54.192.146.34
-54.192.146.34
-103.102.166.224
-103.102.166.224
-103.102.166.224
-103.102.166.224
-103.102.166.224
-103.102.166.224
-103.102.166.224
-103.102.166.224
-103.102.166.224
 103.102.166.224
 104.93.220.176
 104.18.19.221
@@ -129,12 +143,12 @@ https://www.worldbank.org
 
 
 [INFO] Searching IP for indonesia keyword
-[INFO] Found 20 IP
+[INFO] Found 9 IP
 ```
 
 ### Extracts the real path 
 ```
-➤ domhttpx.py --keyword indonesia --amount 20 --real-path
+➤ domhttpx.py --keyword indonesia --amount 9 --real-path
 
      _           _  _ _   _
   __| |___ _ __ | || | |_| |_ _ ____ __
@@ -145,18 +159,7 @@ https://www.worldbank.org
             naufalardhani.com
 
 https://www.suara.com/entertainment/2021/07/01/211333/6-aktor-indonesia-main-di-film-hollywood-tak-cuma-andalkan-tampang
-https://www.suara.com/bola/2021/07/01/210941/pssi-minta-ezra-walian-tingkatkan-ini-jika-ingin-perkuat-timnas-indonesia?page=all
-https://www.suara.com/tekno/2021/07/01/204518/internet-telkomsel-masih-yang-tercepat-di-indonesia
 https://en.wikipedia.org/wiki/Indonesia
-https://en.wikipedia.org/wiki/Cabinet_of_Indonesia
-https://en.wikipedia.org/wiki/Indonesia_Raya
-https://en.wikipedia.org/wiki/Subdivisions_of_Indonesia
-https://en.wikipedia.org/wiki/Joko_Widodo
-https://id.wikipedia.org/wiki/Indonesia
-https://id.wikipedia.org/wiki/Indonesia#Sejarah
-https://id.wikipedia.org/wiki/Indonesia#Politik
-https://id.wikipedia.org/wiki/Indonesia#Demografi
-https://id.wikipedia.org/wiki/Indonesia#Budaya
 https://www.indonesia.travel/id/en/home
 https://www.britannica.com/place/Indonesia
 https://indonesia.go.id/
@@ -167,7 +170,7 @@ https://www.lonelyplanet.com/indonesia
 
 
 [INFO] Searching domain for indonesia keyword
-[INFO] Found 20 domain
+[INFO] Found 9 domain
 ```
 
 ### Extracts status code
@@ -225,6 +228,9 @@ https://www.mainbasket.com/r/6522/muhamad-hafizh-gua-ingin-jadi-pemain-indonesia
 [INFO] Searching domain for Ananta Dandy keyword
 [INFO] Found 10 domain
 ```
+
+# Help & Bugs
+If you are still confused or find a bug, please open [the issue](https://github.com/naufalardhani/domhttpx/issues). All bug reports are appreciated, and will be responded to as soon as possible thanks!
 
 # Thanks
 - [@MarioVilas](https://github.com/MarioVilas/) - domhttpx uses dorker from the [googlesearch](https://github.com/MarioVilas/googlesearch) package made by him 
