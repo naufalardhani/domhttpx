@@ -10,7 +10,12 @@
 domhttpx is a google search engine dorker with HTTP toolkit built with python, can make it easier for you to find many URLs/IPs at once with fast time.
 
 # How to Install
-
+```
+$ git clone https://github.com/naufalardhani/domhttpx.git
+$ cd domhttpx 
+$ pip3 install -r requirement.txt
+$ python3 domhttpx.py --help
+```
 
 ## Default Usage
 
