@@ -20,6 +20,7 @@ domhttpx is a [google search engine dorker](https://github.com/MarioVilas/google
   - [Extract Title Page from Real Path](#extract-title-page-from-real-path)
   - [Extract Status Code](#extract-status-code)
   - [Extract Status Code from Real Path](#extract-status-code-from-real-path)
+  - [Extract Web Server](#extract-web-server)
 - [Running Example](#running-example)
 - [Help & Bugs](#help--bugs)
 - [Thanks](#thanks)
@@ -78,6 +79,12 @@ This will display help for the tool. Here are all the switches it supports.
 ```sh
 > domhttpx.py --keyword "pentesting basic" --amount 5 --title --real-path
 ```
+
+### Extract Web Server
+```sh
+> domhttpx.py --keyword "pentesting basic" --amount 5 --web-server
+```
+
 
 # Running Example
 ### Running domHttpx with default command
