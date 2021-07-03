@@ -1,4 +1,3 @@
-bs4
 google
 requests
-urllib
+urllib3
