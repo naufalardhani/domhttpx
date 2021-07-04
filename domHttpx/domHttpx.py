@@ -37,12 +37,10 @@ class Domain:
             normal = parsed_url.scheme + '://' + parsed_url.netloc
             domain_only = parsed_url.netloc
             real_path = result
-            ip = socket.gethostbyname(domain_only)
 
             self.normal_url.append(normal)
             self.domain_only.append(domain_only)
             self.real_path.append(real_path)
-            self.ip.append(ip)
             
             if counter == int(self.amount): # untuk menghitung amount
                 break
@@ -61,6 +59,10 @@ class Domain:
 
     def get_ip(self):
         self.dork()
+        for domain in self.domain_only:
+            ip = socket.gethostbyname(domain)
+            self.ip.append(ip)
+        
         return self.ip
 
     def get_custom_path(self, path=None):
@@ -99,7 +101,10 @@ class Domain:
 
     def get_server(self, url):
         for domain in url:
-            r = requests.get(domain)
+            try:
+                r = requests.get(domain)
+            except Exception:
+                continue
             server = f"[{Color.CRED2}{r.headers['server']}{Color.ENDC}]"
             url = domain + ' ' + server
             self.output_server.append(url)
