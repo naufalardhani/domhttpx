@@ -1,11 +1,11 @@
 <p align="center">
      <img src="static/domHttpx.png" height="60">
 <p align="center">
-<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-_red.svg"></a>
-<a href="https://github.com/projectdiscovery/httpx/issues"><img src="https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat"></a>
-<a href="https://twitter.com/owpalll"><img src="https://img.shields.io/twitter/follow/owpalll.svg?logo=twitter"></a>
-<a href="#"><img src="https://img.shields.io/github/forks/naufalardhani/domhttpx?label=Fork"></a>
-<a href="3"><img src="https://img.shields.io/github/forks/naufalardhani/domhttpx?label=Watch"></a>
+<a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-blueviolet.svg"></a>
+<a href="https://github.com/naufalardhani/domhttpx/issues"><img src="https://img.shields.io/github/issues/naufalardhani/domhttpx?color=blueviolet"></a>
+<a href="https://www.python.org/"><img src="https://img.shields.io/badge/made%20with-Python3-blueviolet"></a>
+<a href="#"><img src="https://img.shields.io/badge/platform-osx%2Flinux%2Fwindows-blueviolet"></a>
+<a href="https://github.com/naufalardhani/domhttpx/releases"><img src="https://img.shields.io/github/v/release/naufalardhani/domhttpx.svg?color=blueviolet"></a>
 </p>
 
 domhttpx is a [google search engine dorker](https://github.com/MarioVilas/googlesearch) with HTTP toolkit built with python, can make it easier for you to find many URLs/IPs at once with fast time.
@@ -29,7 +29,7 @@ domhttpx is a [google search engine dorker](https://github.com/MarioVilas/google
 ```
 $ git clone https://github.com/naufalardhani/domhttpx.git
 $ cd domhttpx 
-$ pip3 install -r requirement.txt
+$ pip3 install -r requirements.txt
 $ python3 domhttpx.py --help
 ```
 
