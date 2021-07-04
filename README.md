@@ -26,11 +26,11 @@ domhttpx is a [google search engine dorker](https://github.com/MarioVilas/google
 - [Thanks](#thanks)
 
 # Install
-```
-$ git clone https://github.com/naufalardhani/domhttpx.git
-$ cd domhttpx 
-$ pip3 install -r requirements.txt
-$ python3 domhttpx.py --help
+```sh
+> git clone https://github.com/naufalardhani/domhttpx.git
+> cd domhttpx 
+> pip3 install -r requirements.txt
+> python3 domhttpx.py --help
 ```
 
 # Usage
