@@ -12,7 +12,7 @@
 domhttpx is a [google search engine dorker](https://github.com/MarioVilas/googlesearch) with HTTP toolkit built with python, can make it easier for you to find many URLs/IPs at once with fast time.
 
 <p align="center">
-     <img src="static/default-usage.png">
+     <img src="static/default-usage.png" height="400">
 </p>
 
 - [Install](#install)
