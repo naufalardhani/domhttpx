@@ -15,6 +15,7 @@ domhttpx is a [google search engine dorker](https://github.com/MarioVilas/google
      <img src="static/default-usage.png" height="400">
 </p>
 
+# List
 - [Install](#install)
 - [Usage](#usage)
   - [Flags](#flags)
