@@ -1,5 +1,6 @@
 <p align="center">
      <img src="static/domHttpx.png" height="60">
+</p>
 <p align="center">
 <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-blueviolet.svg"></a>
 <a href="https://github.com/naufalardhani/domhttpx/issues"><img src="https://img.shields.io/github/issues/naufalardhani/domhttpx?color=blueviolet"></a>
@@ -9,6 +10,10 @@
 </p>
 
 domhttpx is a [google search engine dorker](https://github.com/MarioVilas/googlesearch) with HTTP toolkit built with python, can make it easier for you to find many URLs/IPs at once with fast time.
+
+<p align="center">
+     <img src="static/default-usage.png" height="60">
+</p>
 
 - [Install](#install)
 - [Usage](#usage)
