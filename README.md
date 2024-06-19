@@ -32,11 +32,21 @@ domhttpx is a [google search engine dorker](https://github.com/MarioVilas/google
 - [Thanks](#thanks)
 
 # Install
+
+### For Windows, Linux and Mac.
+
 ```sh
 > git clone https://github.com/naufalardhani/domhttpx.git
 > cd domhttpx 
 > pip3 install -r requirements.txt
 > python3 domhttpx.py --help
+```
+
+### With Docker
+
+```sh
+> docker pull naufalardhani/domhttpx:0.0.1
+> docker run naufalardhani/domhttpx:0.0.1 --help
 ```
 
 # Usage
