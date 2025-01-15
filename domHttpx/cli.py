@@ -73,7 +73,7 @@ def main():
     args = parse_argument()
     init = Domain(args.keyword, args.amount)
 
-    os.system('clear')
+    # os.system('clear')
     
     validation(args)
 

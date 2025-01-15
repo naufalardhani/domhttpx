@@ -160,10 +160,10 @@ class Domain:
         if args.silent != True:
             tab() # print("\n")
             if 'http' not in show:
-                info('Searching IP for %s keyword' % self.keyword)
-                info('Found %i IP' % counter)
+                info('Searching IP for "%s" keyword.' % self.keyword)
+                info('Found %i IP.' % counter)
             else:
-                info('Searching domain for %s keyword' % self.keyword)
-                info('Found %i domain' % counter)
+                info('Searching domain for "%s" keyword.' % self.keyword)
+                info('Found %i domain.' % counter)
     
         
