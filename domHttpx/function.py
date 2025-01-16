@@ -1,26 +1,34 @@
 import glob
 import os
+from pathlib import Path
 
 from domHttpx import write
 
 def check_result():
-    result_name = glob.glob('./result/*')
-    counter = 0
-    for name in result_name:
-        counter += 1
-        print('%i. %s' % (counter, name.replace('./result/', '')))
+    result_dir = Path('./result')
+    result_files = list(result_dir.glob('*'))
+    
+    for idx, file_path in enumerate(result_files, 1):
+        print(f'{idx}. {file_path.name}')
 
 def show_result(filename):
-    os.system('cat result/%s' % filename)
+    result_path = Path('./result') / filename
+    try:
+        with open(result_path) as f:
+            print(f.read())
+    except FileNotFoundError:
+        write.error(f"File {filename} not found.")
+    except Exception as e:
+        write.error(f"An error occurred while reading file: {str(e)}.")
 
 def remove_result(filename):
-    os.system('cat result/%s' % filename)
-    file = open('result/%s' % filename)
-    counter = 0
-    for i in file:
-        counter += 1
+    result_path = Path('./result') / filename
+    
+    with open(result_path) as f:
+        line_count = sum(1 for _ in f)
+    
     write.tab()
-    # info('Total %i line' % counter)
-    confirm = input('Are you sure to remove %s which has %i results? (y/n) ' % (filename, counter))
-    if confirm == "y":
-        os.system("rm result/%s" % filename)
+    confirm = input(f'Are you sure to remove {filename} which has {line_count} results? (y/n) ')
+    
+    if confirm.lower() == 'y':
+        result_path.unlink()
